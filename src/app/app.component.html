@@ -1,0 +1,40 @@
+
+<div class="p-20">
+<div class="container h-100 grid gap-4 md:grid-cols-7 md:grid-rows-6 sm:grid sm:grid-cols-4">
+    <div class="flex items-end justify-end col-start-1 col-end-8  h-20 bg-blue-400 rounded-lg text-2xl font-semibold border-2 border-primary p-4">{{display}}</div>
+    <div class="col-start-1 col-end-3 items-center justify-center h-20 bg-primary rounded-lg text-2xl font-semibold hidden sm:flex">Rad &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Deg</div>
+    <div class="items-center justify-center h-20 bg-primary rounded-lg text-2xl font-semibold hidden sm:flex">x!</div>
+    <div class="items-center justify-center h-20 bg-primary rounded-lg text-2xl font-semibold hidden sm:flex">&#40;</div>
+    <div class="items-center justify-center h-20 bg-primary rounded-lg text-2xl font-semibold hidden sm:flex">&#41;</div>
+    <div class="items-center justify-center h-20 bg-primary rounded-lg text-2xl font-semibold hidden sm:flex">%</div>
+    <div class="flex items-center justify-center h-20 bg-primary rounded-lg text-2xl font-semibold"><button (click)="reset()">AC</button></div>
+    <div class="items-center justify-center h-20 bg-primary rounded-lg text-2xl font-semibold hidden sm:flex">Inv</div>
+    <div class="items-center justify-center h-20 bg-primary rounded-lg text-2xl font-semibold hidden sm:flex">sin</div>
+    <div class="items-center justify-center h-20 bg-primary rounded-lg text-2xl font-semibold hidden sm:flex">In</div>
+    <div class="flex items-center justify-center h-20 bg-secondary rounded-lg text-2xl font-semibold"><button (click)="myNumbers(7)">7</button></div>
+    <div class="flex items-center justify-center h-20 bg-secondary rounded-lg text-2xl font-semibold"><button (click)="myNumbers(8)">8</button></div>
+    <div class="flex items-center justify-center h-20 bg-secondary rounded-lg text-2xl font-semibold"><button (click)="myNumbers(9)">9</button></div>
+    <div class="flex items-center justify-center h-20 bg-primary rounded-lg text-2xl font-semibold"><button (click)="onOperand('d')">&#247;</button></div>
+    <div class="items-center justify-center h-20 bg-primary rounded-lg text-2xl font-semibold hidden sm:flex">&#960;</div>
+    <div class="items-center justify-center h-20 bg-primary rounded-lg text-2xl font-semibold hidden sm:flex">cos</div>
+    <div class="items-center justify-center h-20 bg-primary rounded-lg text-2xl font-semibold hidden sm:flex">log</div>
+    <div class="flex items-center justify-center h-20 bg-secondary rounded-lg text-2xl font-semibold"><button (click)="myNumbers(4)">4</button></div>
+    <div class="flex items-center justify-center h-20 bg-secondary rounded-lg text-2xl font-semibold"><button (click)="myNumbers(5)">5</button></div>
+    <div class="flex items-center justify-center h-20 bg-secondary rounded-lg text-2xl font-semibold"><button (click)="myNumbers(6)">6</button></div>
+    <div class="flex items-center justify-center h-20 bg-primary rounded-lg text-2xl font-semibold "><button (click)="onOperand('m')">x</button></div>
+    <div class="items-center justify-center h-20 bg-primary rounded-lg text-2xl font-semibold hidden sm:flex">e</div>
+    <div class="items-center justify-center h-20 bg-primary rounded-lg text-2xl font-semibold hidden sm:flex">tan</div>
+    <div class="items-center justify-center h-20 bg-primary rounded-lg text-2xl font-semibold hidden sm:flex">&#8730;</div>
+    <div class="flex items-center justify-center h-20 bg-secondary rounded-lg text-2xl font-semibold"><button (click)="myNumbers(1)">1</button></div>
+    <div class="flex items-center justify-center h-20 bg-secondary rounded-lg text-2xl font-semibold"><button (click)="myNumbers(2)">2</button></div>
+    <div class="flex items-center justify-center h-20 bg-secondary rounded-lg text-2xl font-semibold"><button (click)="myNumbers(3)">3</button></div>
+    <div class="flex items-center justify-center h-20 bg-primary rounded-lg text-2xl font-semibold"><button (click)="onOperand('s')">-</button></div>
+    <div class="items-center justify-center h-20 bg-primary rounded-lg text-2xl font-semibold hidden sm:flex">Ans</div>
+    <div class="items-center justify-center h-20 bg-primary rounded-lg text-2xl font-semibold hidden sm:flex">EXP</div>
+    <div class="items-center justify-center h-20 bg-primary rounded-lg text-2xl font-semibold hidden sm:flex">x&#94;</div>
+    <div class="flex items-center justify-center h-20 bg-secondary rounded-lg text-2xl font-semibold"><button (click)="myNumbers(0)">0</button></div>
+    <div class="flex items-center justify-center h-20 bg-secondary rounded-lg text-2xl font-semibold"><button (click)="myNumbers(0)">.</button></div>
+    <div class="flex items-center justify-center h-20 bg-blue rounded-lg text-2xl font-semibold text-[#ffff]"><button (click)="calculate()">=</button></div>
+    <div class="flex items-center justify-center h-20 bg-primary rounded-lg text-2xl font-semibold"><button (click)="onOperand('a')">+</button></div>
+</div>
+</div>
